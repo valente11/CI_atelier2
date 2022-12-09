@@ -31,4 +31,6 @@ jobs:
       run: mvn test
     - name: Build with Maven
       run: mvn -B package --file pom.xml -Dmaven.test.skip=true
+    - name: lance le script make_html.sh
+      run: chmod +x make_html.sh | sh make_html.sh target/biblio-0.1.jar
 
